@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+	body {
+		/*background-color: #E5E8E8;*/
+		/*background-color: #f8f7f5;*/
+		background-color: #fafaf9;
+	}
+
+	.placeholder_text {
+		font-color: #9370DB;
+		font-size: 16px;
+		font-family: Courier;
+		/*font-family: Roboto;*/
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.grid_container {
+		display: grid;
+		grid-gap: 1px 5px;
+  		justify-content: space-around;
+	}
+
+	.grid_columns {
+		display: grid;
+		grid-template-columns: 105px 105px 105px 105px 105px 105px 105px 105px 105px 105px 105px 105px;
+		grid-gap: 5px;
+		font-family: Courier;
+	}
+
+    .grid_results {
+      display: flex;
+      justify-content: center;
+      grid-template-columns: 220px 220px 220px 220px 220px 220px 200px;
+      grid-gap: 10px;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: left;
+      font-family: Courier;
+	}
+
+
+	.box {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  font-size: 15px;
+	}
+
+    .text_input_box {
+	    display: block;
+	    margin: auto;
+	    text-align: center;
+	    width: 400px;
+	    height: 40px;
+    }
+
+</style>
+
+
+  <head>
+
+
+
+<!--      Bootstrap setup  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Resistor Calculator</title>
+
+    <!-- Bootstrap -->
+
+    <h1 style="padding-left: 2%;">
+    Parallel Resistor Pair Calculator v2
+    </h1>
+   </head>
+   <body>
+
+    <div class="container-fluid">
+
+		<div class="form-group">
+		    <p >
+		    	<input type="text" id="integer_input" required class="placeholder_text text_input_box form-control" tabindex="1" placeholder='Enter a required value'></input>
+		    </p>
+	 	</div>
+
+		<!-- <div class="jumbotron" style="background-color: #fafaf9"> -->
+		<div class="jumbotron" style="background-color: #f8f7f5">
+
+			<h3 class="placeholder_text grid_container" style=";">E12 series resistor values</h3>
+
+			<div class="grid_container">
+				<div class="grid_columns">
+
+					<div class="box"><input type="checkbox" value="1000" checked><label class="checkbox-inline">1000</label></div>
+					<div class="box"><input type="checkbox" value="1200" checked><label class="checkbox-inline">1200</label></div>
+					<div class="box"><input type="checkbox" value="1500" checked><label class="checkbox-inline">1500</label></div>
+					<div class="box"><input type="checkbox" value="1800" checked><label class="checkbox-inline">1800</label></div>
+					<div class="box"><input type="checkbox" value="2200" checked><label class="checkbox-inline">2200</label></div>
+					<div class="box"><input type="checkbox" value="2700" checked><label class="checkbox-inline">2700</label></div>
+					<div class="box"><input type="checkbox" value="3300" checked><label class="checkbox-inline">3300</label></div>
+					<div class="box"><input type="checkbox" value="3900" checked><label class="checkbox-inline">3900</label></div>
+					<div class="box"><input type="checkbox" value="4700" checked><label class="checkbox-inline">4700</label></div>
+					<div class="box"><input type="checkbox" value="5600" checked><label class="checkbox-inline">5600</label></div>
+					<div class="box"><input type="checkbox" value="6800" checked><label class="checkbox-inline">6800</label></div>
+					<div class="box"><input type="checkbox" value="8200" checked><label class="checkbox-inline">8200</label></div>
+				</div>
+
+
+				<div class="grid_columns">
+
+					<div class="box"><input type="checkbox" value="10000" checked><label class="checkbox-inline">10k</label></div>
+					<div class="box"><input type="checkbox" value="12000" checked><label class="checkbox-inline">12k</label></div>
+					<div class="box"><input type="checkbox" value="15000" checked><label class="checkbox-inline">15k</label></div>
+					<div class="box"><input type="checkbox" value="18000" checked><label class="checkbox-inline">18k</label></div>
+					<div class="box"><input type="checkbox" value="22000" checked><label class="checkbox-inline">22k</label></div>
+					<div class="box"><input type="checkbox" value="27000" checked><label class="checkbox-inline">27k</label></div>
+					<div class="box"><input type="checkbox" value="33000" checked><label class="checkbox-inline">33k</label></div>
+					<div class="box"><input type="checkbox" value="39000" checked><label class="checkbox-inline">39k</label></div>
+					<div class="box"><input type="checkbox" value="47000" checked><label class="checkbox-inline">47k</label></div>
+					<div class="box"><input type="checkbox" value="56000" checked><label class="checkbox-inline">56k</label></div>
+					<div class="box"><input type="checkbox" value="68000" checked><label class="checkbox-inline">68k</label></div>
+					<div class="box"><input type="checkbox" value="82000" checked><label class="checkbox-inline">82k</label></div>
+				</div>
+
+				<div class="grid_columns">
+
+					<div class="box"><input type="checkbox" value="100000" checked><label class="checkbox-inline">100k</label></div>
+					<div class="box"><input type="checkbox" value="120000" checked><label class="checkbox-inline">120k</label></div>
+					<div class="box"><input type="checkbox" value="150000" checked><label class="checkbox-inline">150k</label></div>
+					<div class="box"><input type="checkbox" value="180000" checked><label class="checkbox-inline">180k</label></div>
+					<div class="box"><input type="checkbox" value="220000" checked><label class="checkbox-inline">220k</label></div>
+					<div class="box"><input type="checkbox" value="270000" checked><label class="checkbox-inline">270k</label></div>
+					<div class="box"><input type="checkbox" value="330000" checked><label class="checkbox-inline">330k</label></div>
+					<div class="box"><input type="checkbox" value="390000" checked><label class="checkbox-inline">390k</label></div>
+					<div class="box"><input type="checkbox" value="470000" checked><label class="checkbox-inline">470k</label></div>
+					<div class="box"><input type="checkbox" value="560000" checked><label class="checkbox-inline">560k</label></div>
+					<div class="box"><input type="checkbox" value="680000" checked><label class="checkbox-inline">680k</label></div>
+					<div class="box"><input type="checkbox" value="820000" checked><label class="checkbox-inline">820k</label></div>
+				</div>
+
+				<div class="grid_columns">
+
+					<div class="box"><input type="checkbox" value="1000000" checked><label class="checkbox-inline">1M</label></div>
+					<div class="box"><input type="checkbox" value="1200000" checked><label class="checkbox-inline">1.2M</label></div>
+					<div class="box"><input type="checkbox" value="1500000" checked><label class="checkbox-inline">1.5M</label></div>
+					<div class="box"><input type="checkbox" value="1800000" checked><label class="checkbox-inline">1.8M</label></div>
+					<div class="box"><input type="checkbox" value="2200000" checked><label class="checkbox-inline">2.2M</label></div>
+					<div class="box"><input type="checkbox" value="2700000" checked><label class="checkbox-inline">2.7M</label></div>
+					<div class="box"><input type="checkbox" value="3300000" checked><label class="checkbox-inline">3.3M</label></div>
+					<div class="box"><input type="checkbox" value="3900000" checked><label class="checkbox-inline">3.9M</label></div>
+					<div class="box"><input type="checkbox" value="4700000" checked><label class="checkbox-inline">4.7M</label></div>
+					<div class="box"><input type="checkbox" value="5600000" checked><label class="checkbox-inline">5.6M</label></div>
+					<div class="box"><input type="checkbox" value="6800000" checked><label class="checkbox-inline">6.8M</label></div>
+					<div class="box"><input type="checkbox" value="8200000" checked><label class="checkbox-inline">8.2M</label></div>
+				</div>
+
+				<div class="grid_columns" id="extra_checkbox" >
+				</div>
+			</div>
+
+		</div>
+
+
+	    <div>
+	      	<input type="text" id="additional_resistor" required class="placeholder_text text_input_box form-control" tabindex="2" style="margin-top: 10px;" placeholder='Enter an additional resistor value'></input>
+	  	</div>
+
+	        <div class="array_display" style="">
+		           <p class="array_display" id="results_output">
+			        	<label class=""></label><output class="" id="array_output" label=""></output>
+		           </p>
+	        </div>
+
+			<div style="text-align: center">
+	            <p style="margin-top: px;  font-size: 1px; color: white;">By Andrew Tobolov Copyright 2017</p>
+	        </div>
+	</div>
+
+    </body>
+
+	<script type="text/javascript" src="../Res_script.js">
+
+	</script>
+</html>
