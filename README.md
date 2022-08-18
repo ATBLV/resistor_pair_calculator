@@ -1,5 +1,7 @@
 # resistor_pair_calculator
 
+https://atblv.github.io/resistor_pair_calculator/resistor.html
+
 A utility application which will likely be useful to precisely no one.... Created to practice (originally python and) javascript and calibrate opamps for work more effectively and efficiently. 
 
 Background
